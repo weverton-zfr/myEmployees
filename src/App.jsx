@@ -1,10 +1,14 @@
+import Footer from "components/Footer"
+import NavBar from "components/NavBar"
 import { Outlet } from "react-router-dom"
 
 const App = () => {
 
   return (
     <>
-      <Outlet/>
+      <NavBar/>
+        <Outlet/>
+      <Footer/>
     </>
     
   )
