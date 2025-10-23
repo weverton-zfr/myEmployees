@@ -1,0 +1,39 @@
+.Card{
+    background-color: aliceblue;
+    color: #000;
+    width: 17.5rem;
+    font-size: 1.2rem;
+}
+
+/*Grupo das img*/
+
+.imgGroup img{
+    background-size: cover;
+    width: 17.5rem; /*280px em caso do rem estar padrao (16px)*/
+    height: 12.5rem; /*200px em caso do rem estar padrao (16px)*/
+}
+
+/*Gurpo dos nomes*/
+
+.nameGroup{
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.nameGroup h3{
+    font-weight: 700;
+}
+
+/*Grupo de dados*/
+
+.dataGroup{
+    padding: 1rem 0 2rem 1rem;
+}
+
+.dataGroup h4{
+    color: #272727;
+    font-weight: 300;
+}

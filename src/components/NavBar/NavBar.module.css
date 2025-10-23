@@ -4,28 +4,42 @@
     border-bottom: 2px solid var(--buttonColor);
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 5rem;
 }
+
+/*Links em geral*/
 
 .NavBar a{
     text-decoration: none;
     color: #fff;
 }
 
+/*Titulo*/
+
 .NavBar span{
-    font-size: 1.2em;
-    letter-spacing: 0.2em;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
 }
+
+/*Elemento pai das Opcoes*/
 
 .NavBar ul{
     display: flex;
     list-style: none;
-    gap: 1em;
+    gap: 3rem;
+}
+
+/*Opcoes*/
+
+.NavBar ul li a{
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .NavBar ul li a::after{
     content: "_";
-    font-weight: 700;
+    font-weight: 900;
     color: var(--buttonColor);
 }
