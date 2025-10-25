@@ -3,6 +3,9 @@ import axios from "axios"
 
 import Card from "components/Card"
 import Container from "components/Container"
+import Button from "components/Button"
+
+import styles from "./Home.module.css"
 
 const Home = () => {
 
@@ -19,6 +22,8 @@ const Home = () => {
     console.log(employess)
 
     return (
+        <Container type="ctTitle">
+                <h2>Funcionarios</h2>
             <Container type='ctCards'>
                 {
                     employess.map(data => [
@@ -34,6 +39,11 @@ const Home = () => {
                     ])
                 }
             </Container>
+                <Button
+                type="seeMore"
+                text="Ver mais"
+                />
+        </Container>
 )}
 
 export default Home
