@@ -15,6 +15,10 @@
     color: #fff;
 }
 
+.NavBar a:hover{
+    color: #d1d1d1;
+}
+
 /*Titulo*/
 
 .NavBar span{
