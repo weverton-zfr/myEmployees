@@ -2,13 +2,13 @@
     background-color: var(--buttonColor2);
     border-radius: 6px;
     width: 90rem;
-    margin: auto;
-    padding: 2rem 0;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     font-size: 1.2rem;
 }
 
@@ -24,4 +24,11 @@
     display: flex;
     gap: 1rem;
     flex-direction: column;
+}
+
+.ctEmployees{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

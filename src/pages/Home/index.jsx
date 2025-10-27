@@ -33,7 +33,7 @@ const Home = () => {
             <h2>Veja alguns de seus funcionarios</h2>
             <Container type="card">
             {
-                    employess.map(data => [
+                    employess.slice(0,4).map(data => [
                         <Card
                         key={data.id}
                         photo={data.photo}
