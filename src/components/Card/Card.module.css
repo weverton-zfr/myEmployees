@@ -19,8 +19,6 @@
 .nameGroup{
     display: flex;
     justify-content: center;
-    gap: .2rem;
-    white-space: nowrap;
     overflow-x: hidden;
 }
 
@@ -37,4 +35,9 @@
 .dataGroup h4{
     color: #272727;
     font-weight: 300;
+}
+
+.linkCard{
+    text-decoration: none;
+    color: inherit;
 }

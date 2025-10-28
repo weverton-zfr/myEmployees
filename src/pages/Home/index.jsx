@@ -35,10 +35,10 @@ const Home = () => {
             {
                     employess.slice(0,4).map(data => [
                         <Card
+                        id={data.id}
                         key={data.id}
                         photo={data.photo}
                         name={data.name}
-                        lastName={data.LastName}
                         position={data.position}
                         salary={data.salary}
                         age={data.age}
@@ -48,7 +48,7 @@ const Home = () => {
             </Container>
             <p>Gerencie seus funcionarios de forma facil e rapida</p>
             <Button
-            type="seeMore"
+            styleName="seeMore"
             text="Ver todos funcionarios"
             to="/employees"
             />

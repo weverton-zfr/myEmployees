@@ -1,14 +1,28 @@
-.seeMore{
+.seeMore, .start{
     background-color: var(--buttonColor);
+}
+
+.update{
+    background-color: #004d00;
+}
+
+.delete{
+    background-color: #6f0000;
+}
+
+.allButtons{
     border: none;
     padding: 1rem 3rem;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    font-weight: 700;
     color: white;
 }
 
-.seeMore a{
+.allButtons a{
     text-decoration: none;
     color: white;
 }
+
+

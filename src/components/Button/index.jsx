@@ -1,9 +1,9 @@
 import styles from './Button.module.css';
 import { Link } from 'react-router-dom';
 
-const Button = ({ onClick, text, type, to, target}) => {
+const Button = ({ onClick, text, styleName, to, target}) => {
   return (
-    <button className={styles[type]} onClick={onClick}>
+    <button className={`${styles[styleName]} ${styles.allButtons}`} onClick={onClick}>
       {
         to == undefined ?
         text

@@ -20,10 +20,10 @@ const Employees = () => {
             {
                 employees.slice(0,limite).map(data => [
                     <Card
+                    id={data.id}
                     key={data.id}
                     photo={data.photo}
                     name={data.name}
-                    lastName={data.LastName}
                     position={data.position}
                     salary={data.salary}
                     age={data.age}
@@ -35,7 +35,7 @@ const Employees = () => {
                 limite < employees.length &&
                 <Button 
                 onClick={() => setLimite(limite + 4)}
-                type="seeMore"
+                styleName="seeMore"
                 text='Ver mais'
                 />
             }

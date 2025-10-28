@@ -32,3 +32,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.ctEmployee{
+    background-color: var(--buttonColor2);
+    border-radius: 6px;
+    width: 90rem;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    font-size: 1.2rem;
+}

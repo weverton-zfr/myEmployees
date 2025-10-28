@@ -1,0 +1,23 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sumaryEmployee{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    gap: 3rem;
+}
+
+.sumaryEmployee img{
+    width: 17.5rem; /*280px em caso do rem estar padrao (16px)*/
+    height: 12.5rem; /*200px em caso do rem estar padrao (16px)*/
+}
+
+.buttonForm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
