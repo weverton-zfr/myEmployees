@@ -2,12 +2,12 @@
     background-color: var(--buttonColor);
 }
 
-.update{
-    background-color: #004d00;
+.greenButton{
+    background-color: #008900;
 }
 
-.delete{
-    background-color: #6f0000;
+.redButton{
+    background-color: #7d3232;
 }
 
 .allButtons{

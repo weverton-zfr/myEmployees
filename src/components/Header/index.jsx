@@ -6,10 +6,13 @@ const Header = () => {
     <header className={styles.header}>
         <h1>Employee Management System</h1>
         <h2>Gerencie seus funcionarios</h2>
-        <Button 
-        styleName="start"
-        text="Comecar"
-        />
+        <a href="#start">
+          <Button 
+          color="start"
+          text="Comecar"
+          />
+        </a>
+        
     </header>
   );
 }  

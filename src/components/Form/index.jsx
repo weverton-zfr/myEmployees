@@ -1,71 +1,63 @@
 import FormGroup from 'components/FormGroup'
 import styles from './Form.module.css'
-import Button from 'components/Button'
-import { use, useState } from 'react';
 
-const Form = ({value}) => {
+const Form = ({value, children, handleChange, onSubmit, titleText}) => {
     
-    const [employee, setEmployee] = useState([])
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setEmployee((prev) => ({ ...prev, [name]: value }));
-    };
+    
     return (
         <>
         <div className={styles.sumaryEmployee}>
-            <h1>Sobre o Funcionário</h1>
+            <h1>{titleText}</h1>
             <img src={value.photo} alt="Foto do Funcionario" />
             <p>
-                {value.about}
             </p>
         </div>
-        <form className={styles.form} onSubmit={e => e.preventDefault()}>
+        <form className={styles.form} onSubmit={onSubmit}>
             
             <FormGroup 
-                lblName="Nome" 
+                lblText="Nome"  
+                lblName='name'
                 type="text"
                 value={value.name}
                 onChange={handleChange}
             />
             <FormGroup 
-                lblName="Cargo" 
+                lblText="Cargo"  
+                lblName='position'
                 type="text"
                 value={value.position}
                 onChange={handleChange}
             />
             <FormGroup 
-                lblName="Idade" 
+                lblText="Idade"  
+                lblName='age'
                 type="number"
                 value={value.age}
                 onChange={handleChange}
             />
             <FormGroup 
-                lblName="Salario" 
+                lblText="Salario" 
+                lblName='salary' 
                 type="number"
                 value={value.salary}
                 onChange={handleChange}
             />
             <FormGroup 
-                lblName="E-mail" 
+                lblText="E-mail"  
+                lblName='email'
                 type="email"
                 value={value.email}
                 onChange={handleChange}
             />
             <FormGroup 
-                lblName="Telefone" 
+                lblText="Telefone" 
+                lblName='telefone'
                 type="number"
                 value={value.telefone}
                 onChange={handleChange}
             />
-            <FormGroup 
-                lblName="Casado" 
-                type="radio"
-                value={value.married}
-            />
             <div className={styles.buttonForm}>
-                <Button styleName="update" text="Alterar"/>
-                <Button styleName="delete" text="Deletar"/>
+                {children}
             </div>
         </form>
         </>

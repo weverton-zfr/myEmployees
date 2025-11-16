@@ -32,6 +32,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.dpNone{
+    display: none;
+}
 
 .ctEmployee{
     background-color: var(--buttonColor2);

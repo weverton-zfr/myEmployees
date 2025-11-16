@@ -6,9 +6,11 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import Card from "components/Card"
 import Button from "components/Button"
+import NewEmployee from "components/NewEmployee"
 
 const Home = () => {
     const [employess, setEmployees] = useState([])
+    const [visibility, setVisibility] = useState(false)
 
     const getEmployees = () => {
         axios.get('http://localhost:8000/employee')
@@ -16,8 +18,9 @@ const Home = () => {
         .catch(error => console.log(error))
     }
 
-    useEffect(() => getEmployees,[])
+    const changeVisibility = () => setVisibility(!visibility)
 
+    useEffect(() => getEmployees,[])
 
     return (
         <>
@@ -30,7 +33,7 @@ const Home = () => {
             <img src="src/img/disk.svg" alt="Imagem de uma pasta de arquivos" />
         </section>
         <Container type="ctCard">
-            <h2>Veja alguns de seus funcionarios</h2>
+            <h2 id="start">Veja alguns de seus funcionarios</h2>
             <Container type="card">
             {
                     employess.slice(0,4).map(data => [
@@ -48,11 +51,21 @@ const Home = () => {
             </Container>
             <p>Gerencie seus funcionarios de forma facil e rapida</p>
             <Button
-            styleName="seeMore"
-            text="Ver todos funcionarios"
-            to="/employees"
+                color="seeMore"
+                text="Ver todos funcionarios"
+                to="/employees"
             />
-        </Container>
+            <Button
+                color="greenButton"
+                text="Novo funcionario"
+                onClick={changeVisibility}
+            />    
+            </Container>
+            <NewEmployee 
+                visibility={visibility? 'ctNewEmployeeShow' : 'ctNewEmployeeHidden' }
+                onClick={changeVisibility}
+            >
+            </NewEmployee>
         </>
 )}
 

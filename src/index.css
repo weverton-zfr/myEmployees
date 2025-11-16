@@ -11,6 +11,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #333;
     color: #fff;

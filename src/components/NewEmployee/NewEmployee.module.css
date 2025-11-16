@@ -1,0 +1,24 @@
+.ctNewEmployeeShow{
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000069;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctNewEmployeeHidden{
+    display: none;
+}
+
+.NewEmployee{
+    background-color: var(--buttonColor2);
+    border-radius: 6px;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
